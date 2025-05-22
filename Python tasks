@@ -1,0 +1,58 @@
+#Topic1
+#Write a simple Python script that prints your name and a greeting. 
+print("Hello Riya")
+#1. Write a script to calculate the area and perimeter of a rectangle using variables. 
+l=10
+b=5
+area=l*b
+perimeter=2*(l+b)
+print(area)
+print(perimeter)
+#2. Write a script that takes two numbers as input and prints whether the first number is greater than, less than, or equal to the second number. 
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+if num1 > num2:
+    print("The first number is greater than the second number.")
+elif num1 < num2:
+    print("The first number is less than the second number.")
+else:
+    print("The first number is equal to the second number.")
+
+#3. Write a script that checks if a given year is a leap year (divisible by 4, but not by 100 unless also divisible by 400). 
+def is_leap_year(year):
+    if (year % 4 == 0):
+        if (year % 100 != 0) or (year % 400 == 0):
+            return True
+    return False
+
+year = int(input("Enter a year: "))
+if is_leap_year(year):
+    print(f"{year} is a leap year.")
+else:
+    print(f"{year} is not a leap year.")
+
+#4. Experiment with different arithmetic and logical operators in the interpreter. 
+a = 10
+b = 3
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+print("Modulus:", a % b)
+print("Exponent:", a ** b)
+print("Floor Division:", a // b)
+
+x = True
+y = False
+
+print("AND:", x and y)
+print("OR:", x or y)
+print("NOT x:", not x)
+
+#5. Write a script that concatenates two strings and prints the result.
+str1 = input("Enter the first string: ")
+str2 = input("Enter the second string: ")
+result = str1 + str2
+print("Concatenated string:", result)
